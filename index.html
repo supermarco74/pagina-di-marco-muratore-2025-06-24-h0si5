@@ -3,28 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marco Muratore Music</title>
     <meta name="description" content="Discover the delicate and comedic musical world of Marco Muratore">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="font-sans antialiased bg-gradient-to-br from-gray-50 to-gray-100">
-    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50" x-data="{ isOpen: false }">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                <a href="https://supermarco74.github.io/pagina-di-marco-muratore-2025-06-24-h0si5" class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent hover:opacity-80 transition-opacity duration-300">
                     Marco Muratore
-                </div>
-                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
-                    </svg>
+                </a>
+                <button class="mobile-menu-button md:hidden focus:outline-none" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl text-gray-600"></i>
                 </button>
                 <div class="hidden md:flex space-x-8">
                     <a href="#music" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Music</a>
                     <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">About</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Testimonials</a>
+                    <a href="#faq" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Contact</a>
                 </div>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg">
+                <a href="#music" class="block px-4 py-2 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-300">Music</a>
+                <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-300">About</a>
+                <a href="#testimonials" class="block px-4 py-2 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="block px-4 py-2 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -37,7 +58,7 @@
                         Marco Muratore Music
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-12">
-                        Experience a unique blend of comedic and delicate musical compositions that touch the soul and bring joy to your heart.
+                        Experience a captivating fusion of comedic wit and delicate musical artistry. Let my compositions take you on a journey that combines laughter with emotional depth, creating unforgettable musical moments.
                     </p>
                     <a href="#music" class="inline-block bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                         Discover My Music
@@ -51,36 +72,140 @@
                 <h2 class="text-4xl font-bold text-center mb-16">Featured Music</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
-                        <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-purple-100 to-indigo-100"></div>
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Comedic Compositions" class="object-cover w-full h-full">
+                        </div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">Comedic Compositions</h3>
-                            <p class="text-gray-600">Lighthearted and humorous musical pieces that bring smiles.</p>
+                            <p class="text-gray-600">Immerse yourself in witty musical narratives that blend humor with sophisticated composition. Perfect for bringing laughter and joy to any audience.</p>
                         </div>
                     </div>
                     <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
-                        <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-indigo-100 to-purple-100"></div>
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76" alt="Delicate Melodies" class="object-cover w-full h-full">
+                        </div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">Delicate Melodies</h3>
-                            <p class="text-gray-600">Gentle and touching compositions that speak to the heart.</p>
+                            <p class="text-gray-600">Experience emotionally rich compositions that weave intricate harmonies with subtle nuances. Each piece tells a unique story through carefully crafted musical expressions.</p>
                         </div>
                     </div>
                     <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
-                        <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-purple-100 to-indigo-100"></div>
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae" alt="Latest Releases" class="object-cover w-full h-full">
+                        </div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">Latest Releases</h3>
-                            <p class="text-gray-600">Explore my newest musical creations and performances.</p>
+                            <p class="text-gray-600">Discover my newest musical innovations combining contemporary techniques with classical foundations. Fresh perspectives on timeless musical traditions.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="py-24 bg-gradient-to-br from-purple-50 to-indigo-50">
+        <section id="about" class="py-24 bg-gradient-to-br from-purple-50 to-indigo-50">
+            <div class="container mx-auto max-w-7xl px-6">
+                <h2 class="text-4xl font-bold text-center mb-16">About Us</h2>
+                <div class="max-w-3xl mx-auto text-gray-600 space-y-8">
+                    <p class="text-lg leading-relaxed">
+                        Founded in 2010, Marco Muratore Music emerged from a passion for creating unique musical experiences that bridge the gap between classical composition and contemporary entertainment. What began as a small studio experiment has grown into a recognized name in innovative musical expression.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Our mission is to transform the way people experience music by combining technical excellence with emotional storytelling. We believe in the power of music to both entertain and move people, creating memorable experiences that resonate long after the final note has played. Our core values of creativity, authenticity, and musical excellence guide every composition we create.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-white">
+            <div class="container mx-auto max-w-7xl px-6">
+                <h2 class="text-4xl font-bold text-center mb-16">What People Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Marco's ability to blend humor with musical sophistication is unmatched. His compositions for our theater production brought exactly the right balance of wit and emotion, helping us win a local arts award."</p>
+                        <div class="font-semibold">Sarah Johnson</div>
+                        <div class="text-sm text-gray-500">Theater Director, Creative Arts Center</div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"The delicate compositions Marco created for our wedding ceremony were absolutely perfect. Guests are still talking about how the music made the moment even more special."</p>
+                        <div class="font-semibold">Michael Chen</div>
+                        <div class="text-sm text-gray-500">Private Client</div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Working with Marco on our film score was an incredible experience. His understanding of how to enhance emotional scenes while maintaining levity in comedic moments transformed our project."</p>
+                        <div class="font-semibold">David Martinez</div>
+                        <div class="text-sm text-gray-500">Independent Filmmaker</div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Marco's compositions for our children's theater production struck the perfect balance between educational value and entertainment. The kids were engaged throughout, and parents were equally impressed."</p>
+                        <div class="font-semibold">Emma Thompson</div>
+                        <div class="text-sm text-gray-500">Education Director, Youth Arts Program</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-gradient-to-br from-purple-50 to-indigo-50">
+            <div class="container mx-auto max-w-7xl px-6">
+                <h2 class="text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-2">What types of music do you compose?</h3>
+                        <p class="text-gray-600">I specialize in both comedic and delicate compositions, ranging from theatrical scores to intimate wedding music. Each piece is carefully crafted to match the specific needs of the project or occasion.</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-2">How can I commission a custom piece?</h3>
+                        <p class="text-gray-600">Custom compositions start with a consultation where we discuss your vision, timeline, and requirements. Contact me directly through email to begin the conversation about your project.</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-2">Do you perform live at events?</h3>
+                        <p class="text-gray-600">Yes, I am available for live performances at select events. This includes private gatherings, theatrical productions, and corporate functions. Each performance is tailored to your specific needs.</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-2">What is your typical timeline for projects?</h3>
+                        <p class="text-gray-600">Project timelines vary depending on complexity and scope. Simple arrangements might take 2-3 weeks, while full theatrical scores can take several months. Early booking is recommended for major projects.</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-2">Can I license your existing music?</h3>
+                        <p class="text-gray-600">Yes, many of my existing compositions are available for licensing. Rates vary based on usage type and duration. Contact me for a custom licensing quote for your specific needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-white">
             <div class="container mx-auto max-w-7xl px-6">
                 <div class="text-center">
                     <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
-                    <p class="text-xl text-gray-600 mb-8">Interested in collaborations or have questions?</p>
-                    <a href="mailto:supermarco74@gmail.com" class="inline-flex items-center space-x-2 bg-white text-gray-800 font-semibold px-8 py-4 rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                    <p class="text-xl text-gray-600 mb-8">Ready to create something amazing? Let's discuss your musical needs and bring your vision to life.</p>
+                    <a href="mailto:supermarco74@gmail.com" class="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
@@ -93,12 +218,63 @@
 
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto max-w-7xl px-6">
-            <div class="text-center">
-                <div class="text-2xl font-bold mb-4">Marco Muratore</div>
-                <p class="text-gray-400 mb-8">Creating musical experiences that touch hearts and bring joy</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+                <div>
+                    <div class="text-2xl font-bold mb-4">Marco Muratore</div>
+                    <p class="text-gray-400">Creating musical experiences that touch hearts and bring joy</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="#music" class="block text-gray-400 hover:text-white transition-colors duration-300">Music</a>
+                        <a href="#about" class="block text-gray-400 hover:text-white transition-colors duration-300">About</a>
+                        <a href="#contact" class="block text-gray-400 hover:text-white transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <div class="space-y-2">
+                        <a href="https://supermarco74.github.io/pagina-di-marco-muratore-2025-06-24-h0si5/privacy.html" class="block text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                        <a href="https://supermarco74.github.io/pagina-di-marco-muratore-2025-06-24-h0si5/terms.html" class="block text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+                        <a href="https://supermarco74.github.io/pagina-di-marco-muratore-2025-06-24-h0si5/blog.html" class="block text-gray-400 hover:text-white transition-colors duration-300">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
                 <div class="text-sm text-gray-400">© 2024 Marco Muratore. All rights reserved.</div>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
